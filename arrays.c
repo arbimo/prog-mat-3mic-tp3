@@ -284,7 +284,7 @@ void db_process_single_request(DB * db, Request * req, bool atomic) {
         db->global_access_count++;
     } else {
         // atomic version
-        // TODO 3.D: increment both counters atomically
+        // TODO 3.E: increment both counters atomically
         printf("ERROR: unimplemented block in db_process_single_request\n");
         exit(1); 
     }
