@@ -6,8 +6,8 @@
 
 
 #define STRING_SIZE 16
-#define NUM_REPS 10
-#define WARM_UP_ROUNDS 3
+#define NUM_REPS 4
+#define WARM_UP_ROUNDS 1
 
 // Macros to help measure the elapsed time.    
 #define START_CHRONO(X) \
