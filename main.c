@@ -9,7 +9,7 @@ void report_accesses_and_clear(DB * db, uint32_t expected) {
     uint32_t counted_accesses = db_total_accesses(db);
     uint32_t individual_accesses = db_sum_individual_accesses(db);
     printf("%20s\t%20s\t%20s\n", "Expected", "Sum individual", "Total");
-    printf("%20u\t%20u\t%20u\n", expected, individual_accesses, counted_accesses);
+    printf("%20u\t%20u\t%20u\n", expected * NUM_REPS, individual_accesses, counted_accesses);
     db_clear_accesses(db);
 }
 
